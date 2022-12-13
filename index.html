@@ -4,6 +4,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <script>
+      function preview(){
+        let x=document.getElementById("fname").value;
+        console.log(typeof(x));
+        let y=document.getElementById("lname").value;
+        console.log(typeof(y));
+        let mail=document.getElementById("email").value;
+        console.log(typeof(mail));
+
+         let z=x+y
+      }
+    </script>
    </head>
    <body>
     <div class="container" id="all">
@@ -13,6 +26,7 @@
         <div class="col-md-6 mt-3 pd-20" id="cal2">
           <label for=" First name" class="form-label">First name :</label>
           <input type="text" class="form-control" id="Name">
+          <div class="error" id="First nameErr"></div>
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
           <label for="Middle Name" class="form-label">Middlename :</label>
@@ -42,8 +56,10 @@
           </div><br>
         <div class="col-80">
          <label>Address :</label><br>
+         <center>
          <textarea cols="80" rows="5" value="address"></textarea>  <br>
         </div><br>
+        </center>
         <div class="col-md-4 mt-3 pd-20">
         <label for="input Pincode" class="form-label">pincode :</label>
         <input type="text" class="form-control" id="Pincode">
@@ -176,10 +192,101 @@
          </div>
        </div>
        <div class="col-12">
-        <center>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          </center>
-        </div>
-       </centre>
-      </body>
-</html>
+          <button type="submit" class="btn btn-primary">Submit</button> 
+          </div>
+         
+<div class="container" class="pd">
+  <h1 style="text-align:center;color:blue;">MY RESUME</h1>
+<h4  style="color:purple;">Boya Devi </h4>
+<p>Mobile number:9391589883</p>
+<p> Email Id:boyadevi1122@gmail.com</p>
+<p>House no.45/24-k-46-10A5</p>
+<p>Address: Venkata Ramana Colony road no 2 </p>
+<p>Place: Kurnool </p>
+</div>
+<hr>
+<div class="obj">
+<h2 style="color:royalblue;"> CAREER OBJECTIVE </h2>
+<p style="font-size:15px";>To make sincere and continuous efforts towards building a promising career and can take the challenges and can contribute myself towards the growth and success of the organisation </p>
+</div>
+<hr>
+<div class="EDUCATION">
+<h2 style=" color: orange;">EDUCATION QUALIFICATION</h2>
+<table border ="width:100%">
+<tr>
+<td> Bachelor of science</td>
+<td>St.Joseph's Degree College </td>
+<td>2023</td>
+<td>7.6</td>
+</tr>
+<tr>
+<td>Intermediate</td>
+<td>Vidya Vikas Junior College </td>
+<td>2020</td>
+<td>836</td>
+</tr>
+<tr>
+<td>SSC</td>
+<td>Narayana English Medium School </td>
+<td>2018</td>
+<td>9.7</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="Skills">
+<h2 Style="color:red;">TECHNICAL SKILLS </h2>
+<ul>
+<li>C programming </li>
+<li>Java</li>
+<li>DBMS</li>
+<li>Operating System </li>
+</ul>
+</div>
+<hr>
+<div class="Strengthen">
+<h2 Style="color:Pink;">STRENGTHEN </h2>
+<ul>
+<li>Good Communication Skills </li>
+<li>Time Management </li>
+<li>Smart Working </li>
+</ul>
+</div>
+<hr>
+<div class="Hobbies">
+<h2 style="color: blue">HOBBIES </h2>
+<ul>
+<li>Reading Books </li>
+<li>Watching Movies </li>
+<li>Playing Games </li>
+<li>Reading News Paper </li>
+</ul>
+</div>
+<hr>
+<div class="Details">
+<h2 style="color: green;">PROFILE </h2>
+<ul>
+<li>Name:B.Devi</li>
+<li>Father Name:B.Jayaram</li>
+<li>Gender: Female </li>
+<li>Marital Status: Unmarried </li>
+<li>Date Of Birth:01/02/2001</li>
+<li>Languages Known:Telugu, Hindi& English </li>
+<li>Nationality:Indian</li>
+</ul>
+</div>
+<hr>
+<div class="Declaration">
+<h2 style="color:gray;">DECLARATION</h2>
+<p>I here by declare that the above-mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above-mentioned particulars</p>
+<p Style="text-align:right;">Date:2/2/2</p>
+<p style="text-align:left">Signature:B.Devi</p>
+<p style="text-align: left;">Place: Kurnool </p>
+</hr>
+</div>
+    <script>
+      document.getElementById("demo").style.display="none";
+    </script>
+
+        </body>
+        </html>
