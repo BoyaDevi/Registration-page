@@ -1,91 +1,78 @@
 <!DOCTYPE html>
-<html>
+<htmlb lang="en">
    <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
-    <script>
-      function preview(){
-        let x=document.getElementById("fname").value;
-        console.log(typeof(x));
-        let y=document.getElementById("lname").value;
-        console.log(typeof(y));
-        let mail=document.getElementById("email").value;
-        console.log(typeof(mail));
-
-         let z=x+y
-      }
-    </script>
+   
+      <script src="index.js"></script>
+    
+    
    </head>
    <body>
-    <div class="container" id="all">
+    <div class="container">
       <center>
    <u><h1>Registration page</h1></u>
       </center>
         <div class="col-md-6 mt-3 pd-20" id="cal2">
           <label for=" First name" class="form-label">First name :</label>
-          <input type="text" class="form-control" id="Name">
+          <input type="text" class="form-control" id="d1" >
           <div class="error" id="First nameErr"></div>
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
           <label for="Middle Name" class="form-label">Middlename :</label>
-          <input type="text" class="form-control" id="Name">
+          <input type="text" class="form-control" id="d2" >
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
             <label for="Last Name" class="form-label">Last name :</label>
-            <input type="text" class="form-control" id="Name">
+            <input type="text" class="form-control" id="d3">
           </div><br>
           <div class="col-md-6 mt-3 pd-20">
             <label for="inputEmail4" class="form-label">Email :</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="email" class="form-control" id="d4" >
           </div><br>
           <div class="col-md-6 mt-3 pd-20">
             <label for="inputPassword4" class="form-label">Password :</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" class="form-control" id="d5" >
           </div><br>
           <div class="col-md-10 mt-3 pd-20">
             <br><label>Date Of Birth:</label>
-            <input type="date"><br>
+            <input type="date" class="form-control" id="d6" ><br>
           </div><br>
           <div class="col-md-10 mt-3 pd-20">
             <br><label>Gender :</label><br>  
-              <input type="radio" name="male"/> Male 
-              <input type="radio" name="female"/> Female  
-              <input type="radio" name="other"/> Other 
-          </div><br>
+              <input type="text" class="form-control" id="d7">
+                      </div><br>
         <div class="col-80">
-         <label>Address :</label><br>
-         <center>
-         <textarea cols="80" rows="5" value="address"></textarea>  <br>
-        </div><br>
-        </center>
+         <label>Address:</label><br>
+         <textarea cols="80" rows="5" value="address" id="d8" ></textarea><br>
+         <br></div>
+        </div>
+        
         <div class="col-md-4 mt-3 pd-20">
         <label for="input Pincode" class="form-label">pincode :</label>
-        <input type="text" class="form-control" id="Pincode">
+        <input type="text" class="form-control" id="d9" >
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
          <label for="input Mobile No" class="form-label">Mobile No :</label>
-        <input type="text" class="form-control" id="Number" name="country code"  value="+91" size="2"/>  
+        <input type="text" class="form-control" id="10" name="country code"  value="+91" size="2"/>  
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
         <label for="inputAadhar No" class="form-label">Aadhar No :</label>
-        <input type="text" class="form-control" id="Number">
+        <input type="text" class="form-control" id="d11" >
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
         <label for=" inputPancard No" class="form-label">Pancard No :</label>
-        <input type="text" class="form-control" id="Number">
+        <input type="text" class="form-control" id="d12" >
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
           <label for="inputCity" class="form-label">City :</label>
-          <select id="inputCity" class="form-select">
+          <select id="inputCity" class="form-select" id="d13" >
           <option selected>Choose...</option>
           <option>kurnool</option>
         </select>
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
           <label for="inputState" class="form-label">State :</label>
-          <select id="inputState" class="form-select">
+          <select id="inputState" class="form-select" id="d14">
             <option selected>Choose...</option>
             <option>Andhra Pradesh</option>
           </select>
@@ -95,114 +82,66 @@
         </center>
         <div class="col-md-6 mt-3 pd-20">
    <label for="SSC Marks" class="form-label">SSC Marks :</label>
-   <input type="text" class="form-control" id="Marks">      
+   <input type="text" class="form-control" id="d15">      
        </div><br>
        <div class="col-md-6 mt-3 pd-20">
       <label for="School Name"class="form-label">School Name :</label>
-<select id="inputSchool" class="form-select">
-<option selected>Choose...</option>
-<option>Keshava Reddy Talent School</option>
-</select>
+        <id="d16" class="form-select"  >
+
   </div><br>
   <div class="col-md-6 mt-3 pd-20">
   <label for="Grade" class="form-label">Grade :</label>
-  <input type="text" class="form-control" id="Number">
+  <input type="text" class="form-control" id="d17" >
   </div><br>
   
   
-        <div class="col-md-10 mt-3 pd-20">
-            <br><label>End Date:</label>
-            <input type="date">
-          </div>
   <div class="col-md-6 mt-3 pd-20">
   <label for="Intermediate Marks" class="form-label">Intermediate Marks :</label>
-  <input type="text" class=" form-control" id="Marks">
+  <input type="text" class=" form-control" id="d18">
   </div><br>
   <div class="col-md-6 mt-3 pd-20">
       <label for="College Name" class="form-label">College Name :</label>
-  <select id="inputcollege" class="form-select">
-            <option selected>Choose...</option>
-            <option>Narayana Junior College</option>
-          </select>
+             <id="d19" class="form-select" >
   </div><br>
   <div class="col-md-6 mt-3 pd-20">
   <label for="Grade" class="form-label">Grade :</label>
-  <input type="text" class="form-control" id="Number">
+  <input type="text" class="form-control" id="d20" >
   </div><br>
   
   
-        <div class="col-md-10 mt-3 pd-20">
-            <br><label>End Date:</label>
-            <input type="date">
-          </div>
+        
   <div class="col-md-6 mt-3 pd-20">
   <label for="Graduation" class="form-label">Graduation :</label>
-          <select id="Graduation" class="form-select">
-            <option selected>Choose...</option>
-            <option>Under Graduation</option>
-            <option>Post Graduation</option>
-          </select>
+           <id="d21" class="form-select">
+            
         </div><br>
         <div class="col-md-6 mt-3 pd-20">
   <label for="College Name" class="form-label">College Name :</label>
-  <select id="inputcollege" class="form-select">
-            <option selected>Choose...</option>
-            <option>St.Joseph Degree College</option>
-          </select>
+   <id="d22" class="form-select" >
+            
   </div><br>
   <div class="col-md-6 mt-3 pd-20">
   <label for="Grade" class="form-label">Grade :</label>
-  <input type="text" class="form-control" id="Number">
+  <input type="text" class="form-control" id="d23" >
   </div><br>
   
   
-        <div class="col-md-10 mt-3 pd-20">
-            <br><label>End Date:</label>
-            <input type="date">
-          </div>  
-                  
-            
-  
-  <div class="col-md-6 mt-3 pd-20">
-  <label for="Resume" class="form-label">Resume :</label>
-          <select id="Resume" class="form-select">
-            <option selected>select file</option>
-          </select>
-        </div><br>
-        <div class="col-md-6 mt-3 pd-20">
-  <label for="passport size photo" class="form-label">photo</label>
-          <select id="photo" class="form-select">
-            <option selected>select</option>
-          </select>
-        </div><br>
-        <div class="col-12">
-         <div class="form-check">
-           <input class="form-check-input" type="checkbox" id="gridCheck">
-           <label class="form-check-label" for="gridCheck">
-             Terms and Conditions
-           </label>
-         </div>
-       </div>
-       <div class="col-12">
-         <div class="form-check">
-           <input class="form-check-input" type="checkbox" id="gridCheck">
-           <label class="form-check-label" for="gridCheck">
-             I agree
-           </label>
-         </div>
-       </div>
+        
        <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button> 
           </div>
-         
-<div class="container" class="pd">
-  <h1 style="text-align:center;color:blue;">MY RESUME</h1>
-<h4  style="color:purple;">Boya Devi </h4>
-<p>Mobile number:9391589883</p>
-<p> Email Id:boyadevi1122@gmail.com</p>
-<p>House no.45/24-k-46-10A5</p>
-<p>Address: Venkata Ramana Colony road no 2 </p>
-<p>Place: Kurnool </p>
+   <div class="container" id="resume">  
+    <center>
+      <h1 id="head">Resume</h1>
+    </center>
+<div class="pd" >
+  <h3><p id='fname'></p><p id='flname'></p></h3>
+ <!---<p><p id="f5"></p><p id="f4"></p><p id="f3"></p></p>-->
+ <ul>
+  <li><p id="fadd"></p></li>
+  <li><p id="fmail"></p></li>
+  <li><p id="fphno"></p></li>
+ </ul>
 </div>
 <hr>
 <div class="obj">
@@ -284,9 +223,6 @@
 <p style="text-align: left;">Place: Kurnool </p>
 </hr>
 </div>
-    <script>
-      document.getElementById("demo").style.display="none";
-    </script>
-
+   </div> 
         </body>
         </html>
